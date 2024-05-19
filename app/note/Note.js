@@ -111,7 +111,7 @@ const Note = () => {
               </button>
               <button
                 onClick={() => handleShareNote(note.text)}
-                className="absolute bottom-2 right-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full p-2 shadow-md transition duration-300"
+                className="absolute bottom-2 right-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full p-2 py-1 shadow-md transition duration-300"
               >
                 Share
               </button>
