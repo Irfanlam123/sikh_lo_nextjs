@@ -65,19 +65,18 @@ const Note = () => {
           console.error("Error sharing note:", error);
         });
     } else {
-      alert("Web Share API is not supported in your browser");
+      alert("API nhi bni hai abhi");
     }
   };
 
   return (
-    <div
-      suppressHydrationWarning
-      className="min-h-screen bg-slate-200 flex justify-center"
-    >
+    <div className="min-h-screen bg-slate-200 flex justify-center">
       <div className="p-5 bg-amber-50 flex flex-col mt-7 w-full max-w-4xl mx-5 rounded-md">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-700 mb-8 flex justify-center">
-          Sticky Notes
-        </h1>
+        <div className="bg-blue-300 hover:bg-blue-100 shadow-xl transition duration-300 p-6  rounded-full flex justify-center mb-4 py-3">
+          <h1 className="text-4xl md:text-3xl font-extrabold text-gray-700 ">
+            Sticky Notes
+          </h1>
+        </div>
         <div className="flex justify-center">
           <button
             onClick={handleAddNote}
