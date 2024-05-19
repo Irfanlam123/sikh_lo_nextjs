@@ -65,7 +65,7 @@ const Note = () => {
           console.error("Error sharing note:", error);
         });
     } else {
-      alert("API nhi bni hai abhi");
+      alert("API Pe Kam chal rha hai");
     }
   };
 
