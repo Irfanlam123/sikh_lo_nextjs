@@ -5,6 +5,10 @@ const Note = () => {
 
   const colors = [
     "bg-red-100",
+    "bg-red-300",
+    "bg-red-500",
+
+    "bg-red-600",
     "bg-green-100",
     "bg-blue-100",
     "bg-yellow-100",
@@ -66,7 +70,10 @@ const Note = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-200 flex justify-center">
+    <div
+      suppressHydrationWarning
+      className="min-h-screen bg-slate-200 flex justify-center"
+    >
       <div className="p-5 bg-amber-50 flex flex-col mt-7 w-full max-w-4xl mx-5 rounded-md">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-700 mb-8 flex justify-center">
           Sticky Notes
@@ -104,7 +111,7 @@ const Note = () => {
               </button>
               <button
                 onClick={() => handleShareNote(note.text)}
-                className="absolute bottom-2 right-2 bg-blue-500 hover:bg-gray-700 text-white font-semibold rounded-full p-2 py-1 shadow-md transition duration-300"
+                className="absolute bottom-2 right-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full p-2 shadow-md transition duration-300"
               >
                 Share
               </button>
